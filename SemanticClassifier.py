@@ -4,7 +4,7 @@ import torch
 class SemanticClassifier(nn.Module):
     """Neural Network for semantic text analysis"""
 
-    def __init__(self, vocab_size=10000, embedding_dim=128, hidden_dim=256, num_classes=5):
+    def __init__(self, vocab_size=10000, embedding_dim=128, hidden_dim=128, num_classes=5):
         super(SemanticClassifier, self).__init__()
 
         self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)

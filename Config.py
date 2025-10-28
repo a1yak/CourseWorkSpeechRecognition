@@ -11,11 +11,11 @@ class Config:
     # Model parameters
     VOCAB_SIZE = 10000
     EMBEDDING_DIM = 128
-    HIDDEN_DIM = 256
+    HIDDEN_DIM = 128
     MAX_LEN = 100
 
     # Training parameters
-    EPOCHS = 10
+    EPOCHS = 8
     BATCH_SIZE = 32
     LEARNING_RATE = 0.001
     VALIDATION_SPLIT = 0.2

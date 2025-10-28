@@ -59,7 +59,7 @@ class SpeechSemanticAnalyzer:
 
         # Training setup
         criterion = nn.CrossEntropyLoss()
-        optimizer = torch.optim.Adam(self.classifier.parameters(), lr=Config.LEARNING_RATE)
+        optimizer = torch.optim.Adam(self.classifier.parameters(), lr=Config.LEARNING_RATE, weight_decay = 1e-4)
 
         # Training loop
         self.classifier.train()
